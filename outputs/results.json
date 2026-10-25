@@ -1,0 +1,128 @@
+{
+  "baseline": {
+    "model_type": "baseline",
+    "training_duration_sec": 38.82,
+    "test_precision": 46.15,
+    "test_recall": 35.29,
+    "test_f1": 40.0,
+    "by_type": {
+      "LOC": {
+        "precision": 79.07,
+        "recall": 40.96,
+        "f1": 53.97,
+        "support": 83
+      },
+      "MISC": {
+        "precision": 42.86,
+        "recall": 40.91,
+        "f1": 41.86,
+        "support": 22
+      },
+      "ORG": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 2
+      },
+      "PER": {
+        "precision": 44.76,
+        "recall": 31.76,
+        "f1": 37.15,
+        "support": 148
+      }
+    },
+    "speed": {
+      "mean_latency_ms": 36.22,
+      "std_latency_ms": 1.5,
+      "median_latency_ms": 35.87,
+      "p95_latency_ms": 38.59,
+      "throughput_tokens_per_sec": 1325.4,
+      "num_benchmarked_runs": 30
+    },
+    "checkpoint_path": "checkpoints\\baseline_model.pt"
+  },
+  "jpt": {
+    "model_type": "jpt",
+    "training_duration_sec": 70.94,
+    "test_precision": 24.39,
+    "test_recall": 21.28,
+    "test_f1": 22.73,
+    "by_type": {
+      "LOC": {
+        "precision": 63.64,
+        "recall": 42.17,
+        "f1": 50.72,
+        "support": 83
+      },
+      "MISC": {
+        "precision": 14.29,
+        "recall": 45.45,
+        "f1": 21.74,
+        "support": 22
+      },
+      "ORG": {
+        "precision": 33.33,
+        "recall": 50.0,
+        "f1": 40.0,
+        "support": 2
+      },
+      "PER": {
+        "precision": 5.19,
+        "recall": 3.12,
+        "f1": 3.9,
+        "support": 128
+      }
+    },
+    "speed": {
+      "mean_latency_ms": 42.55,
+      "std_latency_ms": 3.03,
+      "median_latency_ms": 41.74,
+      "p95_latency_ms": 48.45,
+      "throughput_tokens_per_sec": 2279.9,
+      "num_benchmarked_runs": 30
+    },
+    "checkpoint_path": "checkpoints\\jpt_model.pt"
+  },
+  "multi_def_jpt": {
+    "model_type": "multi_def_jpt",
+    "training_duration_sec": 54.55,
+    "test_precision": 20.75,
+    "test_recall": 21.28,
+    "test_f1": 21.01,
+    "by_type": {
+      "LOC": {
+        "precision": 67.31,
+        "recall": 42.17,
+        "f1": 51.85,
+        "support": 83
+      },
+      "MISC": {
+        "precision": 40.91,
+        "recall": 40.91,
+        "f1": 40.91,
+        "support": 22
+      },
+      "ORG": {
+        "precision": 1.89,
+        "recall": 50.0,
+        "f1": 3.64,
+        "support": 2
+      },
+      "PER": {
+        "precision": 4.39,
+        "recall": 3.91,
+        "f1": 4.13,
+        "support": 128
+      }
+    },
+    "speed": {
+      "mean_latency_ms": 44.62,
+      "std_latency_ms": 5.91,
+      "median_latency_ms": 43.2,
+      "p95_latency_ms": 52.88,
+      "throughput_tokens_per_sec": 2174.1,
+      "num_benchmarked_runs": 30
+    },
+    "checkpoint_path": "checkpoints\\multi_def_jpt_model.pt"
+  }
+}

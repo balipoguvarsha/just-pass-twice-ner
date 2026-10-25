@@ -1,0 +1,32 @@
+{
+  "model": {
+    "backbone_name": "distilgpt2",
+    "local_weights_path": "distilgpt2_model.safetensors",
+    "projection_dim": 128,
+    "max_seq_length": 128,
+    "dropout": 0.1,
+    "o_class_weight": 0.25
+  },
+  "training": {
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "epochs": 3,
+    "random_seed": 42,
+    "smoke_test_samples": 80,
+    "full_train_samples": 300,
+    "val_samples": 100,
+    "test_samples": 120
+  },
+  "data": {
+    "data_dir": "data/raw",
+    "default_dataset": "conll2003",
+    "evaluation_datasets": ["conll2003", "politics", "science", "ai", "music", "literature"]
+  },
+  "paths": {
+    "checkpoints_dir": "checkpoints",
+    "outputs_dir": "outputs",
+    "results_file": "outputs/results.json",
+    "log_file": "outputs/experiment_log.json"
+  }
+}

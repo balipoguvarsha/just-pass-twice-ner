@@ -1,0 +1,225 @@
+{
+  "ai": {
+    "domain": "ai",
+    "num_sentences": 120,
+    "target_entity_types": [
+      "ALGORITHM",
+      "CONFERENCE",
+      "COUNTRY",
+      "FIELD",
+      "LOC",
+      "METRICS",
+      "MISC",
+      "ORG",
+      "PER",
+      "PRODUCT",
+      "PROGRAMLANG",
+      "RESEARCHER",
+      "TASK"
+    ],
+    "models": {
+      "baseline": {
+        "precision": 10.67,
+        "recall": 5.52,
+        "f1": 7.28,
+        "total_gold": 489,
+        "total_pred": 253,
+        "total_correct": 27
+      },
+      "jpt": {
+        "precision": 6.7,
+        "recall": 2.66,
+        "f1": 3.81,
+        "total_gold": 489,
+        "total_pred": 194,
+        "total_correct": 13
+      },
+      "multi_def_jpt": {
+        "precision": 7.07,
+        "recall": 5.32,
+        "f1": 6.07,
+        "total_gold": 489,
+        "total_pred": 368,
+        "total_correct": 26
+      }
+    }
+  },
+  "literature": {
+    "domain": "literature",
+    "num_sentences": 120,
+    "target_entity_types": [
+      "AWARD",
+      "BOOK",
+      "COUNTRY",
+      "EVENT",
+      "LITERARYGENRE",
+      "LOC",
+      "MAGAZINE",
+      "MISC",
+      "ORG",
+      "PER",
+      "POEM",
+      "WRITER"
+    ],
+    "models": {
+      "baseline": {
+        "precision": 9.39,
+        "recall": 6.49,
+        "f1": 7.67,
+        "total_gold": 663,
+        "total_pred": 458,
+        "total_correct": 43
+      },
+      "jpt": {
+        "precision": 7.81,
+        "recall": 6.33,
+        "f1": 6.99,
+        "total_gold": 663,
+        "total_pred": 538,
+        "total_correct": 42
+      },
+      "multi_def_jpt": {
+        "precision": 5.53,
+        "recall": 6.33,
+        "f1": 5.9,
+        "total_gold": 663,
+        "total_pred": 760,
+        "total_correct": 42
+      }
+    }
+  },
+  "music": {
+    "domain": "music",
+    "num_sentences": 120,
+    "target_entity_types": [
+      "ALBUM",
+      "AWARD",
+      "BAND",
+      "COUNTRY",
+      "EVENT",
+      "LOC",
+      "MISC",
+      "MUSICALARTIST",
+      "MUSICALINSTRUMENT",
+      "MUSICGENRE",
+      "ORG",
+      "PER",
+      "SONG"
+    ],
+    "models": {
+      "baseline": {
+        "precision": 3.7,
+        "recall": 2.59,
+        "f1": 3.05,
+        "total_gold": 848,
+        "total_pred": 594,
+        "total_correct": 22
+      },
+      "jpt": {
+        "precision": 3.23,
+        "recall": 2.12,
+        "f1": 2.56,
+        "total_gold": 848,
+        "total_pred": 557,
+        "total_correct": 18
+      },
+      "multi_def_jpt": {
+        "precision": 1.8,
+        "recall": 2.0,
+        "f1": 1.9,
+        "total_gold": 848,
+        "total_pred": 942,
+        "total_correct": 17
+      }
+    }
+  },
+  "politics": {
+    "domain": "politics",
+    "num_sentences": 120,
+    "target_entity_types": [
+      "COUNTRY",
+      "ELECTION",
+      "EVENT",
+      "LOC",
+      "MISC",
+      "ORG",
+      "PER",
+      "POLITICALPARTY",
+      "POLITICIAN"
+    ],
+    "models": {
+      "baseline": {
+        "precision": 13.64,
+        "recall": 12.13,
+        "f1": 12.84,
+        "total_gold": 775,
+        "total_pred": 689,
+        "total_correct": 94
+      },
+      "jpt": {
+        "precision": 9.13,
+        "recall": 9.03,
+        "f1": 9.08,
+        "total_gold": 775,
+        "total_pred": 767,
+        "total_correct": 70
+      },
+      "multi_def_jpt": {
+        "precision": 6.92,
+        "recall": 8.26,
+        "f1": 7.53,
+        "total_gold": 775,
+        "total_pred": 925,
+        "total_correct": 64
+      }
+    }
+  },
+  "science": {
+    "domain": "science",
+    "num_sentences": 120,
+    "target_entity_types": [
+      "ACADEMICJOURNAL",
+      "ASTRONOMICALOBJECT",
+      "AWARD",
+      "CHEMICALCOMPOUND",
+      "CHEMICALELEMENT",
+      "COUNTRY",
+      "DISCIPLINE",
+      "ENZYME",
+      "EVENT",
+      "LOC",
+      "MISC",
+      "ORG",
+      "PER",
+      "PROTEIN",
+      "SCIENTIST",
+      "UNIVERSITY"
+    ],
+    "models": {
+      "baseline": {
+        "precision": 6.95,
+        "recall": 5.17,
+        "f1": 5.93,
+        "total_gold": 658,
+        "total_pred": 489,
+        "total_correct": 34
+      },
+      "jpt": {
+        "precision": 3.59,
+        "recall": 2.58,
+        "f1": 3.01,
+        "total_gold": 658,
+        "total_pred": 473,
+        "total_correct": 17
+      },
+      "multi_def_jpt": {
+        "precision": 2.59,
+        "recall": 3.19,
+        "f1": 2.86,
+        "total_gold": 658,
+        "total_pred": 811,
+        "total_correct": 21
+      }
+    }
+  }
+}

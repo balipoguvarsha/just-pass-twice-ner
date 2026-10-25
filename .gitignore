@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large Pretrained Weights & Archives (DO NOT COMMIT TO GITHUB)
+distilgpt2_model.safetensors
+just_pass_twice_datasets.zip
+
+# Large Model Checkpoints (>100MB rejected by GitHub)
+checkpoints/*_model.pt
+checkpoints/*.bin
+
+# Preserve lightweight adapter heads (<2MB each, fits in GitHub repo)
+!checkpoints/heads/
+!checkpoints/heads/*.pt
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets
+.env
+.streamlit/secrets.toml
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Test & Coverage Outputs
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs & Temporary Files
+*.log
+scratch/
+.system_generated/
