@@ -9,7 +9,7 @@ from typing import Dict, List, Optional, Tuple
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from transformers import AutoModel, AutoTokenizer, PreTrainedModel
+
 
 
 class ProjectionMLP(nn.Module):
@@ -38,7 +38,7 @@ class BaselineTokenClassifier(nn.Module):
     """
     def __init__(
         self,
-        backbone: PreTrainedModel,
+        backbone: nn.Module,
         num_labels: int,
         dropout: float = 0.1
     ):
@@ -88,7 +88,7 @@ class JustPassTwiceNER(nn.Module):
     """
     def __init__(
         self,
-        backbone: PreTrainedModel,
+        backbone: nn.Module,
         projection_dim: int = 128,
         entity_emb_dim: int = 128,
         num_entity_types: int = 5,
@@ -190,7 +190,7 @@ class MultiDefJustPassTwiceNER(JustPassTwiceNER):
     """
     def __init__(
         self,
-        backbone: PreTrainedModel,
+        backbone: nn.Module,
         projection_dim: int = 128,
         entity_emb_dim: int = 128,
         num_entity_types: int = 5,
